@@ -1,15 +1,11 @@
-import { useState } from 'react'
-
-
+import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "../routes/AppRoutes";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  return (
-    <>
-    <h1>This is student management app</h1>
-    </>
-  )
+  return <AppRoutes />;
 }
 
-export default App
+export default App;
